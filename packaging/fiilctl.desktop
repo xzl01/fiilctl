@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=FIIL 控制台
+Name[en]=FIIL Control Panel
+GenericName=蓝牙耳机控制台
+Comment=通过经典蓝牙（SPP）控制 FIIL 真无线耳机：电量 / 降噪 / LDAC / EQ / 按键映射 / 配对列表
+Exec=fiilctl
+Icon=fiilctl
+Terminal=false
+Categories=AudioVideo;Audio;
+Keywords=FIIL;earbuds;TWS;bluetooth;SPP;耳机;蓝牙;
+StartupNotify=true
+StartupWMClass=fiilctl
