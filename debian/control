@@ -1,0 +1,33 @@
+Source: fiilctl
+Section: sound
+Priority: optional
+Maintainer: xzl01 <xiangzelong@radxa.com>
+Build-Depends: debhelper-compat (= 13),
+               cmake,
+               qt6-base-dev,
+               qt6-declarative-dev,
+               qt6-base-dev-tools,
+               libbluetooth-dev,
+               libgl-dev
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+Homepage: https://github.com/xzl01/fiilctl
+
+Package: fiilctl
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         qml6-module-qtquick,
+         qml6-module-qtquick-controls,
+         qml6-module-qtquick-layouts,
+         qml6-module-qtquick-shapes,
+         qml6-module-qtquick-templates,
+         qml6-module-qtqml-workerscript,
+         bluez
+Description: FIIL earbuds control panel for Linux
+ Qt Quick control panel for FIIL (Bluetrum based) TWS earbuds, talking to
+ them over classic Bluetooth RFCOMM/SPP -- no phone app needed.
+ .
+ Features: battery levels, low-latency mode, single-ear noise cancelling,
+ LDAC switch, multipoint, adaptive DSP switches, 10-band EQ (presets and
+ custom), key/gesture remapping, pair list management and a raw protocol log.
